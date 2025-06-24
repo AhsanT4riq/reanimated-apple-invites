@@ -1,50 +1,101 @@
-# Welcome to your Expo app 👋
+# Apple-Style Invites
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, interactive invitation interface inspired by Apple's design language, built with React Native Reanimated and Expo. This project showcases smooth animations, gesture handling, and a delightful user experience for browsing and interacting with event invitations.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🍎 Apple-inspired UI/UX with smooth animations
+- ✨ Interactive carousel for browsing invitations
+- 👆 Intuitive gesture handling with React Native Gesture Handler
+- 📱 Responsive design that works on both iOS and Android
+- 🎨 Styled with Tailwind CSS using NativeWind
+- 🚀 Optimized performance with native animations
+- 🌓 Dark mode support
+
+## Demo
+
+[![App Demo GIF](demo/demo.gif)](https://github.com/yourusername/apple-invites/raw/main/demo/demo.mov)
+
+_The GIF above shows a preview of the invitation interface in action. Click on it to view the full demo video (`demo.mov`)._
+
+## Tech Stack
+
+- [Expo](https://expo.dev/) - Development platform
+- [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - For smooth animations
+- [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) - For gesture handling
+- [NativeWind](https://www.nativewind.dev/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
+
+## Prerequisites
+
+- Node.js (v16 or later)
+- Bun (https://bun.sh/) or npm
+- Expo CLI (`bun install -g expo-cli` or `npm install -g expo-cli`)
+- iOS Simulator (for iOS development) or Android Studio (for Android development)
+
+## Installation
+
+1. Clone the repository:
 
    ```bash
+   git clone https://github.com/yourusername/apple-invites.git
+   cd apple-invites
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   bun install
+   # or
    npm install
    ```
 
-2. Start the app
+3. Start the development server:
 
    ```bash
+   bun expo start
+   # or
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your device/emulator:
+   - Press `i` for iOS simulator
+   - Press `a` for Android emulator
+   - Scan the QR code with Expo Go app on your physical device
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+.
+├── src/
+│   ├── app/                 # Main application screens and navigation (Expo Router)
+│   ├── assets/              # Static assets (images, fonts, etc.)
+│   ├── components/          # Reusable UI components
+│   │   ├── Invites.tsx      # Main invites list component
+│   │   ├── InviteItem.tsx   # Individual invite component
+│   │   └── ...
+│   ├── constants/          # Static data and configurations
+│   └── hooks/               # Custom React hooks
+│       └── useCarouselLayout.ts  # Carousel layout logic
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Available Scripts
 
-## Learn more
+- `bun start` - Start the Expo development server
+- `bun run android` - Run on Android device/emulator
+- `bun run ios` - Run on iOS simulator
+- `bun run web` - Run in web browser
 
-To learn more about developing your project with Expo, look at the following resources:
+## Contributing
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Acknowledgments
+
+- Built with ❤️ using Expo and React Native
+- Special thanks to the React Native Reanimated team
+- Inspired by Apple's design language and interactions
