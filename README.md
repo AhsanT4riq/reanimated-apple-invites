@@ -14,7 +14,7 @@ A beautiful, interactive invitation interface inspired by Apple's design languag
 
 ## Demo
 
-[![App Demo GIF](demo/demo.gif)](https://github.com/yourusername/apple-invites/raw/main/demo/demo.mov)
+[![App Demo GIF](demo/demo.gif)](https://github.com/AhsanT4riq/reanimated-apple-invites/raw/main/demo/demo.mov)
 
 _The GIF above shows a preview of the invitation interface in action. Click on it to view the full demo video (`demo.mov`)._
 
@@ -38,8 +38,8 @@ _The GIF above shows a preview of the invitation interface in action. Click on i
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/apple-invites.git
-   cd apple-invites
+   git clone https://github.com/AhsanT4riq/reanimated-apple-invites.git
+   cd reanimated-apple-invites
    ```
 
 2. Install dependencies:
